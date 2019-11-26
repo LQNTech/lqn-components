@@ -1,0 +1,18 @@
+{
+  "name": "lqn-components",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "source": true,
+  "repository": "git@github.com:LQNTech/lqn-components.git",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  }
+}
