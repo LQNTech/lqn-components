@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { Container, Content, Text } from './headerStyles';
+import { Container, LQNLogo, Content, Text } from './headerStyles';
 import allianceLogo from '../assets/allianze2.png';
 
-const Header = ({ children }) => {
+const Header = ({ href, children }) => {
   const params = new URLSearchParams(global.location.search);
   const referrerCode = params.get('referrerCode');
+  const leadCode = params.get('code');
+
   const logo =
     referrerCode === 'xr57608'
       ? allianceLogo
@@ -14,7 +16,9 @@ const Header = ({ children }) => {
   return (
     <Container>
       <Content>
-        <img src={logo} height="50" alt="logo" />
+        <LQNLogo href={leadCode ? `${href}?code=${leadCode}` : '/'}>
+          <img src={logo} height="50" alt="logo" />
+        </LQNLogo>
         <Text>Financiación de Vivienda</Text>
         {children}
       </Content>

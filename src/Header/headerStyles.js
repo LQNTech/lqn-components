@@ -6,6 +6,10 @@ export const Container = styled.header`
   background-color: #fafafa;
 `;
 
+export const LQNLogo = styled.a`
+  text-decoration: none;
+`;
+
 export const Content = styled.div`
   display: flex;
   align-items: center;
