@@ -29,6 +29,7 @@ export const Content = styled.div`
 `;
 
 export const Text = styled.span`
+  flex: 1;
   font-size: 18px;
   line-height: 1.22;
   color: #000000;
