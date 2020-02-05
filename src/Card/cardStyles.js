@@ -26,6 +26,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 `;
 
 export const Text = styled.span`
@@ -33,6 +34,13 @@ export const Text = styled.span`
   font-size: 18px;
   line-height: 1.22;
   color: #000000;
+`;
+
+export const Small = styled.small`
+  flex: 1;
+  font-size: 80%;
+  line-height: 1.22;
+  color: #8b8b8b;
 `;
 
 export const Button = styled.div`

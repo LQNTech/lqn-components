@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Container, Icon, Content, Text, Button } from './cardStyles';
+import { Container, Icon, Content, Text, Button, Small } from './cardStyles';
 
-const Card = ({ icon, label, ...props }) => {
+const Card = ({ icon, label, footer, ...props }) => {
   return (
     <Container {...props}>
       <Icon src={icon} />
@@ -12,6 +12,7 @@ const Card = ({ icon, label, ...props }) => {
           <i className="fas fa-long-arrow-alt-right"></i>
         </Button>
       </Content>
+      <Small>{footer}</Small>
     </Container>
   );
 };
